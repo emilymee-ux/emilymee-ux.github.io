@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<title>Perth's Best Mexican</title>
+
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jportilio.css" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway:900|Roboto:400&display=swap" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="scripts/jportilio.js"></script>
+		<script type="text/javascript" src="scripts/index.js"></script>
+	</head>
+	<body>
+
+		<!-- Tile layout and filtering functionality is thanks to the jPortilio plug in by Tomas Zantas.
+	       This can be found at https://github.com/tomaszantas/jportilio
+			   The jportilio CSS file has been heavizly modified for the purposes of this project.  -->
+
+		<!-- Header of website -->
+		<header class='container-fluid'>
+			<div class="header-box">
+				<h1>Discover Perth's best Mexican food.</h1>
+				<img src='images/cacti.jpg' alt="Illustration of Mexican cacti.">
+			</div>
+		</header>
+
+		<!-- Filters -->
+		<div class="filter">
+			<div class='jprt-buttons'>
+				<ul>
+					<li><button class='jprt-btn' data-jprtgrid='jprt-1' data-tag='casual'>Casual</button></li>
+					<li><button class='jprt-btn' data-jprtgrid='jprt-1' data-tag='trendy'>Trendy</button></li>
+					<li><button class='jprt-btn' data-jprtgrid='jprt-1' data-tag='fancy'>Fancy</button></li>
+				</ul>
+			</div>
+		</div>
+		<div class="filter">
+			<div class='jprt-buttons'>
+				<ul>
+					<li><button class='jprt-btn' data-jprtgrid='jprt-1' data-tag='$'>$</button></li>
+					<li><button class='jprt-btn' data-jprtgrid='jprt-1' data-tag='$$'>$$</button></li>
+					<li><button class='jprt-btn' data-jprtgrid='jprt-1' data-tag='$$$'>$$$</button></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- This div contains all the "tiles" -->
+		<div id='jprt-1' class='container jprt-container'>
+			<div class='jprt-item' data-tags='fancy,$$$' data-content-show='new_section'>
+				<div class='jprt-caption'>
+					<img src='images/elpublico1.jpg' class='tile_img' alt="Image of Mexican restaurant.">
+					<h1 class='jprt-item-title'>EL PUBLICO</h1>
+					<div class='jprt-arrow-down-border'>
+						<div class='jprt-arrow-down-back'>
+							<div class='jprt-arrow-down'></div>
+						</div>
+					</div>
+				</div>
+				<!-- Below section is hidden by default, expands on click -->
+				<div class='jprt-content'>
+					<h1><a  class="link-title" href="https://elpublico.com.au/">El Publico</a></h1>
+					<h2>5pm-12am, 7 days a week</h2>
+					<h3>511 Beaufort St, Highgate WA 6003</h3>
+					<p>El Publico offers some of the best Mexican food in Perth. In order to keep their food as authentic to the source as possible, the head chef went and visited Mexico for a month to learn all about the cuisine. El Publico also features fixed price menus, which are a great deal for groups. The bar has a wide selection of tequila and mezcal.</p>
+				</div>
+			</div>
+			<div class='jprt-item' data-tags='trendy,$$' data-content-show='new_section'>
+				<div class='jprt-caption'>
+					<img src='images/lacholita1.jpg' class='tile_img' alt="Image of Mexican restaurant.">
+					<h1 class='jprt-item-title'>LA CHOLITA</h1>
+					<div class='jprt-arrow-down-border'>
+						<div class='jprt-arrow-down-back'>
+							<div class='jprt-arrow-down'></div>
+						</div>
+					</div>
+				</div>
+				<!-- Below section is hidden by default, expands on click -->
+				<div class='jprt-content'>
+					<h1><a  class="link-title" href="https://www.lavishhabits.com.au/venues/la-cholita/">La Cholita</a></h1>
+					<h2>Mon-Thurs 5pm-12am, Fri-Sun 12pm-2am</h2>
+					<h3>279 William St, Northbridge WA 6003</h3>
+					<p>La Cholita is the perfect place to go when you want both great drinks and great food. Of particular note is their excellent lunch specials available all weekend. A trio of homemade salsas is served with each dish. The tortillas are served warm. Drinks are pricey but a much better deal during happy hour.</p>
+				</div>
+			</div>
+
+			<div class='jprt-item' data-tags='casual,$' data-content-show='new_section'>
+				<div class='jprt-caption'>
+					<img src='images/twogringos1.jpg' class='tile_img' alt="Image of Mexican restaurant.">
+					<h1 class='jprt-item-title'>TWO GRINGOS</h1>
+					<div class='jprt-arrow-down-border'>
+						<div class='jprt-arrow-down-back'>
+							<div class='jprt-arrow-down'></div>
+						</div>
+					</div>
+				</div>
+				<!-- Below section is hidden by default, expands on click -->
+				<div class='jprt-content'>
+					<h1><a  class="link-title" href="http://twogringos.com.au/">Two Gringos Mexican Grill</a></h1>
+					<h2>Mon-Sat 11:30am-9:30pm, Closed Sunday</h2>
+					<h3>257A Albany Hwy, Victoria Park WA 6100</h3>
+					<p>Quick, easy, delicious. Two Gringos Mexican Grill is the most casual of the places on our list. That doesn't make the food any less delicious! They offer burritos, tacos, nachos, and more and you can customize every menu item since everything is made fresh right in front of you. A great place for lunch or dinner in Victoria Park.</p>
+				</div>
+			</div>
+
+			<div class='jprt-item' data-tags='trendy,$$$' data-content-show='new_section'>
+				<div class='jprt-caption'>
+					<img src='images/lavida1.jpg' class='tile_img' alt="Image of Mexican restaurant.">
+					<h1 class='jprt-item-title'>LA VIDA URBANA</h1>
+					<div class='jprt-arrow-down-border'>
+						<div class='jprt-arrow-down-back'>
+							<div class='jprt-arrow-down'></div>
+						</div>
+					</div>
+				</div>
+				<!-- Below section is hidden by default, expands on click -->
+				<div class='jprt-content'>
+					<h1><a  class="link-title" href="https://www.lavidaurbana.com.au/">La Vida Urbana</a></h1>
+					<h2>Wed-Sun 4pm-11pm, Closed Monday and Tuesday</h2>
+					<h3>1/228 Carr Pl, Leederville WA 6007</h3>
+					<p>The sister restaurant to El Publico, La Vida Urbana is undoubtedly one of the best Mexican restaurants in Perth. They take great care to pay homage to authentic Mexican cuisine, by sourcing the best possible ingredients. They also make many things from scratch, from cheese to salsa. </p>
+				</div>
+			</div>
+			<div class='jprt-item' data-tags='fancy,$$$' data-content-show='new_section'>
+				<div class='jprt-caption'>
+					<img src='images/mexicankitchen1.jpg' class='tile_img' alt="Image of Mexican restaurant.">
+					<h1 class='jprt-item-title'>MEXICAN KITCHEN</h1>
+					<div class='jprt-arrow-down-border'>
+						<div class='jprt-arrow-down-back'>
+							<div class='jprt-arrow-down'></div>
+						</div>
+					</div>
+				</div>
+				<!-- Below section is hidden by default, expands on click -->
+				<div class='jprt-content'>
+					<h1><a  class="link-title" href="https://www.mexicankitchen.com.au/">Mexican Kitchen Fremantle</a></h1>
+					<h2>Fri-Sun 12pm-9:30pm, Mon-Thurs 5:30pm-8:30pm</h2>
+					<h3>19 South Terrace, Fremantle WA 6160</h3>
+					<p>Mexican Kitchen in Fremantle is one of the first restaurants to pop up in WA, and is a Fremantle institution. The interior of the restaurant is colorfully decorated with a variety of Mexican textiles. Their guacamole is quite good, and the enchiladas are excellent. Check out their daily deals which can be quite a bargain!</p>
+				</div>
+			</div>
+
+			<div class='jprt-item' data-tags='casual,$$' data-content-show='new_section'>
+				<div class='jprt-caption'>
+					<img src='images/caballitos1.jpg' class='tile_img' alt="Image of Mexican restaurant.">
+					<h1 class='jprt-item-title'>CABALLITOS</h1>
+					<div class='jprt-arrow-down-border'>
+						<div class='jprt-arrow-down-back'>
+							<div class='jprt-arrow-down'></div>
+						</div>
+					</div>
+				</div>
+				<!-- Below section is hidden by default, expands on click -->
+				<div class='jprt-content'>
+					<h1><a  class="link-title" href="http://caballitos.com.au/">Caballitos</a></h1>
+					<h2>Tues-Sun 4pm-1am, Closed Monday</h2>
+					<h3>26 Queen St, Perth WA 6000</h3>
+					<p>Caballitos is really more of a bar than a restaurant, but that doesn't mean their tacos and totopos are any less delicious! They feature an impressive array of drinks, and some great happy hour specials. Once you've danced up an appetite, they have $5 taco Tuesdays! Their totopos (corn chips) and guac are the perfect with any drink.</p>
+				</div>
+			</div>
+
+			<div class='jprt-item' data-tags='trendy,$$' data-content-show='new_section'>
+				<div class='jprt-caption'>
+					<img src='images/ontheborder1.jpg' class='tile_img' alt="Image of Mexican restaurant.">
+					<h1 class='jprt-item-title'>ON THE BORDER</h1>
+					<div class='jprt-arrow-down-border'>
+						<div class='jprt-arrow-down-back'>
+							<div class='jprt-arrow-down'></div>
+						</div>
+					</div>
+				</div>
+				<!-- Below section is hidden by default, expands on click -->
+				<div class='jprt-content'>
+					<h1><a  class="link-title" href="https://www.facebook.com/onthebordermexicangrill/">On The Border Mexican Grill</a></h1>
+					<h2>Sat-Sun 12-10pm, Tues-Fri 4:30-10pm, Closed Monday</h2>
+					<h3>28 Anchorage Dr, Mindarie WA 6030</h3>
+					<p>On The Border in Mindarie is a great new Mexican restaurant in Perth. Their homemade guacamole is second to none, and the service is friendly. Try a burrito bowl for lunch on Saturday or Sunday! They also have a bar serving up great Margaritas. Don't miss the mural of Donald Trump on the wall!</p>
+				</div>
+			</div>
+
+			<div class='jprt-item' data-tags='casual,$$' data-content-show='new_section'>
+				<div class='jprt-caption'>
+					<img src='images/zocalo1.jpg' class='tile_img' alt="Image of Mexican restaurant.">
+					<h1 class='jprt-item-title'>ZOCALO'S</h1>
+					<div class='jprt-arrow-down-border'>
+						<div class='jprt-arrow-down-back'>
+							<div class='jprt-arrow-down'></div>
+						</div>
+					</div>
+				</div>
+				<!-- Below section is hidden by default, expands on click -->
+				<div class='jprt-content'>
+					<h1><a  class="link-title" href="https://www.zocalomexican.com.au/">Zocalo's Restuarant</a></h1>
+					<h2>Tues-Sat 5-8:30pm, Closed Sunday and Monday</h2>
+					<h3>Safety Bay and, Penguin Rd, Safety Bay WA 6168</h3>
+					<p>Zocalo's Mexican in Rockingham is a great place for dinner. It has a family friendly and festive atmosphere. The restaurant itself is decorated with various items collected on the owner's trips to Mexico. The queso is delicious and worth trying, as is their sangria.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
